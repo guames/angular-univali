@@ -14,7 +14,7 @@ export class MenuComponent implements OnInit {
     this.criarMenu();
   }
 
-  criarMenu(){
+  private criarMenu(){
     this.menu =[
       {
         titulo: "Cadastro Basico",
