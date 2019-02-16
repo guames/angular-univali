@@ -9,6 +9,9 @@ import { PedidoComponent } from './pedido/pedido.component';
 import { SaborComponent } from './sabor/sabor.component';
 import { TamanhoComponent } from './tamanho/tamanho.component';
 import { BebidaComponent } from './bebida/bebida.component';
+import { IndexComponent } from './index/index.component';
+import { FooterComponent } from './footer/footer.component';
+import { TopbarComponent } from './topbar/topbar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { BebidaComponent } from './bebida/bebida.component';
     PedidoComponent,
     SaborComponent,
     TamanhoComponent,
-    BebidaComponent
+    BebidaComponent,
+    IndexComponent,
+    FooterComponent,
+    TopbarComponent
   ],
   imports: [
     BrowserModule,
