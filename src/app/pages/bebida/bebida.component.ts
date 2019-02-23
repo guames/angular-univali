@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {BebidaService} from "./bebida.service";
 
 @Component({
@@ -10,9 +10,14 @@ export class BebidaComponent implements OnInit {
 
   constructor(
       public bebidaService: BebidaService
-  ) { }
+  ) {
+  }
 
   ngOnInit() {
+  }
+
+  consoleLog(){
+    console.log('aaaaaa')
   }
 
 }
