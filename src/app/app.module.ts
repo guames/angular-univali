@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 import {LayoutModule} from "./layout/layout.module";
 import {PagesModule} from "./pages/pages.module";
+import { CicloComponent } from './ciclo/ciclo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CicloComponent
   ],
   imports: [
     BrowserModule,
