@@ -1,149 +1,121 @@
-<!-- Begin Page Content -->
-<div class="container-fluid">
-
-  <!-- Page Heading -->
-  <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Pedido de Pizza</h1>
-  </div>
-
-  <!-- Content Row -->
-
-  <div class="row">
-
-    <!-- Area Chart -->
-    <div class="col-xl-12 col-lg-12">
-      <div class="card shadow mb-4">
-        <!-- Card Header - Dropdown -->
-        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-          <h6 class="m-0 font-weight-bold text-primary">Registre Aqui o seu Pedido</h6>
-          <div class="dropdown no-arrow">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-            </a>
-          </div>
+<app-conteudo>
+  <div class="titulo-principal">Pedido de Pizza</div>
+  <div class="titulo-card">Registre aqui seu pedido!</div>
+  <div class="conteudo">
+    <form>
+      <div class="row">
+        <div class="col-xl-4 col-lg-4">
+          <label>Cliente:</label>
+          <input type="text" style="width: 100%" />
         </div>
-        <!-- Card Body -->
-        <div class="card-body">
-          <form>
-            <div class="row">
-              <div class="col-xl-4 col-lg-4">
-                <label>Cliente:</label>
-                <input type="text" style="width: 100%" />
-              </div>
-              <div class="col-xl-4 col-lg-4">
-                <label>Data do Pedido:</label>
-                <input type="text" style="width: 100%" />
-              </div>
-            </div>
-            <hr />
-            <div class="row" style="margin-bottom:10px;">
-              <div class="col-xl-12 col-lg-12">
-                <h6 class="m-0 font-weight-bold text-primary">Solicite a Pizza</h6>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xl-3 col-lg-3">
-                <label>Sabor:</label>
-                <input type="text" style="width: 100%" />
-              </div>
-              <div class="col-xl-3 col-lg-3">
-                <label>Tamanho:</label>
-                <input type="text" style="width: 100%" />
-              </div>
-              <div class="col-xl-2 col-lg-2">
-                <label>Valor:</label>
-                <input type="text" style="width: 100%" />
-              </div>
-              <div class="col-xl-2 col-lg-2">
-                <br /><br />
-                <input type="checkbox" /> Borda de Catupiry
-              </div>
-              <div class="col-xl-1 col-lg-1 float">
-                <br />
-                <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">Adiconar</a>
-              </div>
-            </div>
-            <br />
-
-
-            <div class="table-responsive">
-              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                <tr>
-                  <th>Sabor</th>
-                  <th>Tamanho</th>
-                  <th>Valor</th>
-                  <th>Borda de Catupiry</th>
-                  <th>Ações</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>Calabresa</td>
-                  <td>Grande</td>
-                  <td>R$30,00</td>
-                  <td>Sim</td>
-                  <td style="text-align: center;"><a href="#" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">Remover</a></td>
-                </tr>
-                <tr>
-                  <td>Frango com Catupiry</td>
-                  <td>Grande</td>
-                  <td>R$25,00</td>
-                  <td>Não</td>
-                  <td style="text-align: center;"><a href="#" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">Remover</a></td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <hr />
-            <div class="row" style="margin-bottom:10px;">
-              <div class="col-xl-12 col-lg-12">
-                <h6 class="m-0 font-weight-bold text-primary">Solicite o Refrigerante</h6>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xl-3 col-lg-3">
-                <label>Bebida:</label>
-                <input type="text" style="width: 100%" />
-              </div>
-              <div class="col-xl-3 col-lg-3">
-                <label>Valor:</label>
-                <input type="text" style="width: 100%" />
-              </div>
-            </div>
-            <br />
-
-
-            <div class="table-responsive">
-              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                <tr>
-                  <th>Coca-Cola</th>
-                  <th>Tamanho</th>
-                  <th>Valor</th>
-                  <th>Ações</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>Coca-Cola</td>
-                  <td>2L</td>
-                  <td>R$5,00</td>
-                  <td style="text-align: center;"><a href="#" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">Remover</a></td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <hr />
-
-          </form>
+        <div class="col-xl-4 col-lg-4">
+          <label>Data do Pedido:</label>
+          <input type="text" style="width: 100%" />
         </div>
       </div>
-    </div>
+      <hr />
+      <div class="row" style="margin-bottom:10px;">
+        <div class="col-xl-12 col-lg-12">
+          <h6 class="m-0 font-weight-bold text-primary">Solicite a Pizza</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-3">
+          <label>Sabor:</label>
+          <input type="text" style="width: 100%" />
+        </div>
+        <div class="col-xl-3 col-lg-3">
+          <label>Tamanho:</label>
+          <input type="text" style="width: 100%" />
+        </div>
+        <div class="col-xl-2 col-lg-2">
+          <label>Valor:</label>
+          <input type="text" style="width: 100%" />
+        </div>
+        <div class="col-xl-2 col-lg-2">
+          <br /><br />
+          <input type="checkbox" /> Borda de Catupiry
+        </div>
+        <div class="col-xl-1 col-lg-1 float">
+          <br />
+          <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">Adiconar</a>
+        </div>
+      </div>
+      <br />
 
+
+      <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <thead>
+          <tr>
+            <th>Sabor</th>
+            <th>Tamanho</th>
+            <th>Valor</th>
+            <th>Borda de Catupiry</th>
+            <th>Ações</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Calabresa</td>
+            <td>Grande</td>
+            <td>R$30,00</td>
+            <td>Sim</td>
+            <td style="text-align: center;"><a href="#" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">Remover</a></td>
+          </tr>
+          <tr>
+            <td>Frango com Catupiry</td>
+            <td>Grande</td>
+            <td>R$25,00</td>
+            <td>Não</td>
+            <td style="text-align: center;"><a href="#" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">Remover</a></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr />
+      <div class="row" style="margin-bottom:10px;">
+        <div class="col-xl-12 col-lg-12">
+          <h6 class="m-0 font-weight-bold text-primary">Solicite o Refrigerante</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-3">
+          <label>Bebida:</label>
+          <input type="text" style="width: 100%" />
+        </div>
+        <div class="col-xl-3 col-lg-3">
+          <label>Valor:</label>
+          <input type="text" style="width: 100%" />
+        </div>
+      </div>
+      <br />
+
+
+      <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <thead>
+          <tr>
+            <th>Coca-Cola</th>
+            <th>Tamanho</th>
+            <th>Valor</th>
+            <th>Ações</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Coca-Cola</td>
+            <td>2L</td>
+            <td>R$5,00</td>
+            <td style="text-align: center;"><a href="#" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">Remover</a></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr />
+
+    </form>
   </div>
-  <!-- End of Main Content -->
-</div>
-<!-- End of Content Wrapper -->
+</app-conteudo>

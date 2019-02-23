@@ -6,26 +6,28 @@ import {SaborComponent} from "./sabor/sabor.component";
 import {TamanhoComponent} from "./tamanho/tamanho.component";
 import {BebidaComponent} from "./bebida/bebida.component";
 import {IndexComponent} from "./index/index.component";
+import {LayoutModule} from "../layout/layout.module";
 
 @NgModule({
   declarations: [
+    BebidaComponent,
     ClienteComponent,
+    IndexComponent,
     PedidoComponent,
     SaborComponent,
-    TamanhoComponent,
-    BebidaComponent,
-    IndexComponent
+    TamanhoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    LayoutModule
   ],
   exports: [
+    BebidaComponent,
     ClienteComponent,
+    IndexComponent,
     PedidoComponent,
     SaborComponent,
-    TamanhoComponent,
-    BebidaComponent,
-    IndexComponent
+    TamanhoComponent
   ]
 })
 export class PagesModule { }
