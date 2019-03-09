@@ -7,10 +7,12 @@ import {TamanhoComponent} from "./tamanho/tamanho.component";
 import {BebidaComponent} from "./bebida/bebida.component";
 import {IndexComponent} from "./index/index.component";
 import {LayoutModule} from "../layout/layout.module";
+import {BebidaListagemComponent} from "./bebida-listagem/bebida-listagem.component";
 
 @NgModule({
   declarations: [
     BebidaComponent,
+    BebidaListagemComponent,
     ClienteComponent,
     IndexComponent,
     PedidoComponent,
@@ -23,6 +25,7 @@ import {LayoutModule} from "../layout/layout.module";
   ],
   exports: [
     BebidaComponent,
+    BebidaListagemComponent,
     ClienteComponent,
     IndexComponent,
     PedidoComponent,

@@ -16,8 +16,8 @@ export class BebidaComponent implements OnInit {
   ngOnInit() {
   }
 
-  consoleLog(){
-    console.log('aaaaaa')
+  consoleLog() {
+    console.log('aaaaaa');
   }
 
 }

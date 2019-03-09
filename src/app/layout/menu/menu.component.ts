@@ -19,17 +19,18 @@ export class MenuComponent implements OnInit {
       {
         titulo: "Cadastro Basico",
         itens: [
-          { descricao: "Sabor", link: "sabor.html"},
-          { descricao: "Tamanho", link: "tamanho.html"},
-          { descricao: "Bebida", link: "bebida.html"},
-          { descricao: "Cliente", link: "cliente.html"}
+          { descricao: "Sabor", link: "sabor"},
+          { descricao: "Tamanho", link: "tamanho"},
+          { descricao: "Bebida", link: "bebida"},
+          { descricao: "Bebida - Lista", link: "bebida-listagem"},
+          { descricao: "Cliente", link: "cliente"}
         ]
       },
       {
         titulo: "Pedido",
         itens: [
-          { descricao: "Registrar Pedido", link: "pedido_form.html"},
-          { descricao: "Listagem de Pedido", link: "pedido.html"}
+          { descricao: "Registrar Pedido", link: "pedido_form"},
+          { descricao: "Listagem de Pedido", link: "pedido"}
         ]
       }
     ]

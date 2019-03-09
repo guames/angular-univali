@@ -4,5 +4,5 @@ export class Bebida {
         public id: number,
         public descricao: string,
         public tamanho: string
-    ){}
+    ) {}
 }
