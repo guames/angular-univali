@@ -1,27 +1,25 @@
 <app-conteudo>
-  <div class="titulo-principal">Cadastro de Bebidas</div>
-  <div class="titulo-card">Cadastro de Bebida </div>
-  <div class="conteudo">
-    <form>
-      <div class="row">
-        <div class="col-lg-3 col-xl-3">
-          <label>Descrição:</label>
-          <input type="text" name="descricao" style="100%"/>
-        </div>
-        <div class="col-lg-3 col-xl-3">
-          <label>Tamanho:</label>
-          <input type="text" name="tamanho" style="100%"/>
-        </div>
-      </div>
-
-      <hr/>
-
-      <div class="row">
-        <div class="col-lg-12 col-xl-12">
-          <button class="btn btn-success" (click)="consoleLog()">Salvar</button>
-        </div>
-      </div>
-
-    </form>
-  </div>
+    <div class="titulo-principal">Cadastro de Bebida</div>
+    <div class="titulo-card">Cadastro de Bebida</div>
+    <div class="conteudo">
+        <form (ngSubmit)="salvar()">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4">
+                    <label>Descrição</label>
+                    <input type="text" style="width: 100%" [(ngModel)]="bebida.descricao" name="descricao" />
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <label>Tamanho</label>
+                    <input type="text" style="width: 100%" [(ngModel)]="bebida.tamanho" name="tamanho" />
+                </div>
+                <hr />
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-xl-12 col-lg-12">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </app-conteudo>

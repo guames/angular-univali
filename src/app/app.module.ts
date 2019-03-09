@@ -7,6 +7,9 @@ import { FormsModule} from "@angular/forms";
 import { LayoutModule} from "./layout/layout.module";
 import { PagesModule} from "./pages/pages.module";
 import { CicloComponent } from './ciclo/ciclo.component';
+import {BaseHttp} from "./shared/base/base-http";
+import {BebidaService} from "./shared/service/bebida.service";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -18,9 +21,13 @@ import { CicloComponent } from './ciclo/ciclo.component';
     AppRoutingModule,
     FormsModule,
     LayoutModule,
-    PagesModule
+    PagesModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+      BaseHttp,
+      BebidaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

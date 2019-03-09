@@ -8,6 +8,8 @@ import {BebidaComponent} from "./bebida/bebida.component";
 import {IndexComponent} from "./index/index.component";
 import {LayoutModule} from "../layout/layout.module";
 import {BebidaListagemComponent} from "./bebida-listagem/bebida-listagem.component";
+import {SharedModule} from "../shared/shared.module";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import {BebidaListagemComponent} from "./bebida-listagem/bebida-listagem.compone
   ],
   imports: [
     CommonModule,
-    LayoutModule
+    LayoutModule,
+    SharedModule,
+    FormsModule
   ],
   exports: [
     BebidaComponent,
